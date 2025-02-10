@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+}
+
+.container {
+    height: auto;
+    width: 27%;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    user-select: none;
+    padding: 15px;
+    filter: drop-shadow(0px 0px 1px white);
+    
+}
+
+h2 {
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+button {
+    height: 80px;
+    width: 80px;
+    font-size: 40px;
+    margin: 5px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(65, 63, 63);
+    color: white;
+}
+
+button#grey {
+    background-color: rgb(207, 205, 205);
+    color: black;
+}
+
+button#orange {
+    background-color: orange;
+}
+
+#zero {
+    width: 170px;
+    border-radius: 50px;
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.row input {
+    height: 80px;
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 40px;
+    text-align: right;
+    padding-right: 30px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 40%;
+    }
+
+    button {
+        height: 70px;
+        width: 70px;
+        font-size: 35px;
+    }
+
+    #zero {
+        width: 155px;
+    }
+
+    .row input {
+        font-size: 40px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 60%;
+        padding: 10px;
+    }
+
+    button {
+        height: 60px;
+        width: 60px;
+        font-size: 30px;
+    }
+
+    #zero {
+        width: 135px;
+    }
+
+    .row input {
+        font-size: 44px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 5px;
+    }
+
+    button {
+        height: 50px;
+        width: 50px;
+        font-size: 24px;
+    }
+
+    #zero {
+        width: 115px;
+    }
+
+    .row input {
+        font-size: 40px;
+    }
+}
